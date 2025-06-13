@@ -1,4 +1,7 @@
-with open('input.txt', 'r') as file:
+import os
+
+input_path = os.path.join(os.path.dirname(__file__), 'input.txt')
+with open(input_path, 'r') as file:
     data = file.read().strip().split('\n\n')
     data = [i.split('\n') for i in data]
 
